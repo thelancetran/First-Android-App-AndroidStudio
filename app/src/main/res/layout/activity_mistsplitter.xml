@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        tools:context=".mistsplitter">
+
+        <TextView
+            android:id="@+id/mistsplitterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Mistsplitter Reforged"
+            android:textColor="@color/white"
+            android:textSize="38sp" />
+
+        <ImageView
+            android:id="@+id/mistsplitterImage"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:layout_below="@+id/mistsplitterName"
+            android:src="@drawable/mistsplitter" />
+
+        <ImageView
+            android:id="@+id/mistsplitterMonsterdrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mistsplitterName"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/mistsplitterImage"
+            android:adjustViewBounds="true"
+            android:maxWidth="128dp"
+            android:maxHeight="128dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/chaosoculus" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mistsplitterMonsterdrop"
+            android:layout_toRightOf="@+id/mistsplitterImage"
+            android:adjustViewBounds="true"
+            android:maxWidth="128dp"
+            android:maxHeight="128dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/handguard" />
+
+        //weapon mats
+
+        <LinearLayout
+            android:id="@+id/mistsplitterMats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mistsplitterImage"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="103dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/coral" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="103dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/corall" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14"
+                    android:textColor="@color/white"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="103dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/coralll" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14"
+                    android:textColor="@color/white"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="103dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/corallll" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:textColor="@color/white"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        //weapon stats words (1/90)
+
+        <LinearLayout
+            android:id="@+id/weaponstats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mistsplitterMats"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Base Atk\n(1/90)"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="38sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="56dp"
+                android:text="Crit Dmg (1/90)"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="38sp" />
+        </LinearLayout>
+        //weapon stats numbers
+
+        <LinearLayout
+            android:id="@+id/weaponstatsnums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weaponstats"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="48/674"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:text="9.6/44.1%"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mistsplitterPassive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/weaponstatsnums"
+            android:textStyle="bold"
+            android:textSize="34sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text="Weapon Passive (R1/R5):"/>
+        <TextView
+            android:id="@+id/mistsplitterDesc"
+            android:layout_below="@+id/mistsplitterPassive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gain a 12/15/18/21/24% Elemental DMG Bonus for every element and receive the might of Mistsplitter's Emblem. At stack levels 1/2/3, Mistsplitter's Emblem provides a (8/16/28)/(10/20/35)/(12/24/42)/(14/28/49)/(16/32/56)% Elemental DMG Bonus for the character's Elemental Type. The character will obtain 1 stack of Mistsplitter's Emblem in each of the following scenarios: Normal Attack deals Elemental DMG (stack lasts 5s), casting Elemental Burst (stack lasts 10s); Energy is less than 100% (stack disappears when Energy is full). Each stack's duration is calculated independently."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+        //extra lower space
+        <TextView
+            android:layout_below="@id/mistsplitterDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ">
+        </TextView>
+
+
+    </RelativeLayout>
+
+</ScrollView>

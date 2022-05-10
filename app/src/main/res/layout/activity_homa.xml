@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        tools:context=".homa">
+
+        <TextView
+            android:id="@+id/homaName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Staff of Homa"
+            android:textColor="@color/white"
+            android:textSize="38sp" />
+
+        <ImageView
+            android:id="@+id/homaImage"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:layout_below="@+id/homaName"
+            android:src="@drawable/homa" />
+
+        <ImageView
+            android:id="@+id/homaMonsterdrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/homaName"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/homaImage"
+            android:adjustViewBounds="true"
+            android:maxWidth="128dp"
+            android:maxHeight="128dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/slime" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/homaMonsterdrop"
+            android:layout_toRightOf="@+id/homaImage"
+            android:adjustViewBounds="true"
+            android:maxWidth="128dp"
+            android:maxHeight="128dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/leylinesprout" />
+
+        //weapon mats
+
+        <LinearLayout
+            android:id="@+id/homaMats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/homaImage"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="103dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/aerosiderite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="103dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/aerosideritee" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14"
+                    android:textColor="@color/white"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="103dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/aerosideriteee" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14"
+                    android:textColor="@color/white"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="103dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/aerosideriteeee" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:textColor="@color/white"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        //weapon stats words (1/90)
+
+        <LinearLayout
+            android:id="@+id/weaponstats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/homaMats"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Base Atk\n(1/90)"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="38sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="53dp"
+                android:text="Crit Dmg (1/90)"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="38sp" />
+        </LinearLayout>
+        //weapon stats numbers
+
+        <LinearLayout
+            android:id="@+id/weaponstatsnums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weaponstats"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="46/608"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="72dp"
+                android:text="14.4/66.2%"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/homaPassive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/weaponstatsnums"
+            android:textStyle="bold"
+            android:textSize="34sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text="Weapon Passive (R1/R5):"/>
+        <TextView
+            android:id="@+id/homaDesc"
+            android:layout_below="@+id/homaPassive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="HP increased by 20/25/30/35/40%. Additionally, provides an ATK bonus based on 0.8/1/1.2/1.4/1.6% of the wielder's max HP. When the wielder's HP is less than 50%, this ATK bonus is increased by an additional 1/1.2/1.4/1.6/1.8% of max HP."
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+        //extra lower space
+        <TextView
+            android:layout_below="@id/homaDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ">
+        </TextView>
+
+
+    </RelativeLayout>
+
+</ScrollView>

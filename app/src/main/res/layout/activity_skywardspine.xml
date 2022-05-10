@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        tools:context=".skywardspine">
+
+        <TextView
+            android:id="@+id/skywardspineName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Skyward Spine"
+            android:textColor="@color/white"
+            android:textSize="38sp" />
+
+        <ImageView
+            android:id="@+id/skywardspineImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/skywardspineName"
+            android:src="@drawable/skywardspine" />
+
+        <ImageView
+            android:id="@+id/skywardspineMonsterdrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/skywardspineName"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/skywardspineImage"
+            android:adjustViewBounds="true"
+            android:maxWidth="128dp"
+            android:maxHeight="128dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/chaoscore" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/skywardspineMonsterdrop"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/skywardspineImage"
+            android:adjustViewBounds="true"
+            android:maxWidth="128dp"
+            android:maxHeight="128dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cursescroll" />
+
+        //weapon mats
+
+        <LinearLayout
+            android:id="@+id/skywardspineMats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/skywardspineImage"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="103dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/chains" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="103dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/chainss" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14"
+                    android:textColor="@color/white"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="103dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/chainsss" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14"
+                    android:textColor="@color/white"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="103dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/chainssss" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:textColor="@color/white"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        //weapon stats words (1/90)
+
+        <LinearLayout
+            android:id="@+id/weaponstats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/skywardspineMats"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Base Atk\n(1/90)"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="38sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="72dp"
+                android:text="Sub Stat\nER (1/90)"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="38sp" />
+        </LinearLayout>
+        //weapon stats numbers
+
+        <LinearLayout
+            android:id="@+id/weaponstatsnums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weaponstats"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="48/674"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:text="8/36.8%"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/skywardspinePassive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/weaponstatsnums"
+            android:textStyle="bold"
+            android:textSize="34sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text="Weapon Passive (R1/R5):"/>
+        <TextView
+            android:id="@+id/skywardspineDesc"
+            android:layout_below="@+id/skywardspinePassive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Increases CRIT Rate by 8/10/12/14/16% and increases Normal ATK SPD by 12%. Additionally, Normal and Charged Attacks hits on enemies have a 50% chance to trigger a vaccuum blade that deals 40/55/70/85/100% of ATK as DMG in a small AoE. This effect can occur no more than once every 2s."
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+        //extra lower space
+        <TextView
+            android:layout_below="@id/skywardspineDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ">
+        </TextView>
+
+
+    </RelativeLayout>
+
+</ScrollView>

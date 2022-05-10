@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        tools:context=".freedomsworn">
+
+        <TextView
+            android:id="@+id/freedomswornName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Freedom-Sworn"
+            android:textColor="@color/white"
+            android:textSize="38sp" />
+
+        <ImageView
+            android:id="@+id/freedomswornImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/freedomswornName"
+            android:src="@drawable/freedomsworn" />
+
+        <ImageView
+            android:id="@+id/freedomswornMonsterdrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/freedomswornName"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/freedomswornImage"
+            android:adjustViewBounds="true"
+            android:maxWidth="128dp"
+            android:maxHeight="128dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/chaoscore" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/freedomswornMonsterdrop"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/freedomswornImage"
+            android:adjustViewBounds="true"
+            android:maxWidth="128dp"
+            android:maxHeight="128dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cursescroll" />
+
+        //weapon mats
+
+        <LinearLayout
+            android:id="@+id/freedomswornMats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/freedomswornImage"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="103dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/chains" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="103dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/chainss" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14"
+                    android:textColor="@color/white"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="103dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/chainsss" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14"
+                    android:textColor="@color/white"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="103dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/chainssss" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:textColor="@color/white"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        //weapon stats words (1/90)
+
+        <LinearLayout
+            android:id="@+id/weaponstats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/freedomswornMats"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Base Atk\n(1/90)"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="38sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="72dp"
+                android:text="Sub Stat\nEM (1/90)"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="38sp" />
+        </LinearLayout>
+        //weapon stats numbers
+
+        <LinearLayout
+            android:id="@+id/weaponstatsnums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weaponstats"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="46/608"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="112dp"
+                android:text="43/198"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/freedomswornPassive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/weaponstatsnums"
+            android:textStyle="bold"
+            android:textSize="34sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text="Weapon Passive (R1/R5):"/>
+        <TextView
+            android:id="@+id/freedomswornDesc"
+            android:layout_below="@+id/freedomswornPassive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A part of the &quot;Millenial Movement&quot; that wanders amidst the winds. Increases DMG by 10/12.5/15/17.5/20%. When the character wielding this weapon triggers Elemental Reactions, they gain a Sigil of Rebellion. This effect can be triggered once every 0.5s and can be triggered even if said character is not on the field.
+When you possess 2 Sigils of Rebellion, all of them will be consumed and all nearby party members will obtain &quot;Millennial Movement: Song of Resistance&quot; for 12s. &quot;Millennial Movement: Song of Resistance&quot; increases Normal, Charged and Plunging Attack DMG by 16/20/24/28/32% and increases ATK by 20/25/30/35/40%. Once this effect is triggered, you will not gain Sigils of Rebellion for 20s.
+Of the many effects of the &quot;Millennial Movement,&quot; buffs of the same type will not stack."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+        //extra lower space
+        <TextView
+            android:layout_below="@id/freedomswornDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ">
+        </TextView>
+
+
+    </RelativeLayout>
+
+</ScrollView>

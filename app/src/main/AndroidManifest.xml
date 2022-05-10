@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.firstapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FirstApp">
+        <activity
+            android:name=".skywardatluss"
+            android:exported="true" />
+        <activity
+            android:name=".ayakaa"
+            android:exported="true" />
+        <activity
+            android:name=".polarstar"
+            android:exported="true" />
+        <activity
+            android:name=".thunderingpulse"
+            android:exported="true" />
+        <activity
+            android:name=".elegy"
+            android:exported="true" />
+        <activity
+            android:name=".amosbow"
+            android:exported="true" />
+        <activity
+            android:name=".skywardharp"
+            android:exported="true" />
+        <activity
+            android:name=".kaguraverity"
+            android:exported="true" />
+        <activity
+            android:name=".moonglow"
+            android:exported="true" />
+        <activity
+            android:name=".memoryofdust"
+            android:exported="true" />
+        <activity
+            android:name=".lostprayer"
+            android:exported="true" />
+        <activity
+            android:name=".engulfing"
+            android:exported="true" />
+        <activity
+            android:name=".calamityqueller"
+            android:exported="true" />
+        <activity
+            android:name=".homa"
+            android:exported="true" />
+        <activity
+            android:name=".vortexvanquisher"
+            android:exported="true" />
+        <activity
+            android:name=".pjws"
+            android:exported="true" />
+        <activity
+            android:name=".skywardspine"
+            android:exported="true" />
+        <activity
+            android:name=".redhorn"
+            android:exported="true" />
+        <activity
+            android:name=".sobp"
+            android:exported="true" />
+        <activity
+            android:name=".unforged"
+            android:exported="true" />
+        <activity
+            android:name=".wgs"
+            android:exported="true" />
+        <activity
+            android:name=".skywardpride"
+            android:exported="true" />
+        <activity
+            android:name=".mistsplitter"
+            android:exported="true" />
+        <activity
+            android:name=".freedomsworn"
+            android:exported="true" />
+        <activity
+            android:name=".jadecutter"
+            android:exported="true" />
+        <activity
+            android:name=".summitshaper"
+            android:exported="true" />
+        <activity
+            android:name=".aquilafavonia"
+            android:exported="true" />
+        <activity
+            android:name=".skywardblade"
+            android:exported="true" />
+        <activity
+            android:name=".yae"
+            android:exported="true" />
+        <activity
+            android:name=".shenhe"
+            android:exported="true" />
+        <activity
+            android:name=".itto"
+            android:exported="true" />
+        <activity
+            android:name=".kokomi"
+            android:exported="true" />
+        <activity
+            android:name=".raidenshogun"
+            android:exported="true" />
+        <activity
+            android:name=".yoimiya"
+            android:exported="true" />
+        <activity
+            android:name=".Ayaka"
+            android:exported="true" />
+        <activity
+            android:name=".kazuha"
+            android:exported="true" />
+        <activity
+            android:name=".eula"
+            android:exported="true" />
+        <activity
+            android:name=".hutao"
+            android:exported="true" />
+        <activity
+            android:name=".xiao"
+            android:exported="true" />
+        <activity
+            android:name=".ganyu"
+            android:exported="true" />
+        <activity
+            android:name=".albedo"
+            android:exported="true" />
+        <activity
+            android:name=".zhongli"
+            android:exported="true" />
+        <activity
+            android:name=".childe"
+            android:exported="true" />
+        <activity
+            android:name=".klee"
+            android:exported="true" />
+        <activity
+            android:name=".venti"
+            android:exported="true" />
+        <activity
+            android:name=".qiqi"
+            android:exported="true" />
+        <activity
+            android:name=".keqing"
+            android:exported="true" />
+        <activity
+            android:name=".mona"
+            android:exported="true" />
+        <activity
+            android:name=".diluc"
+            android:exported="true" />
+        <activity
+            android:name=".jean"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity3"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

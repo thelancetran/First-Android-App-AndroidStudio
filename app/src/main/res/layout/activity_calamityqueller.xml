@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        tools:context=".calamityqueller">
+
+        <TextView
+            android:id="@+id/calamityquellerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Calamity Queller"
+            android:textColor="@color/white"
+            android:textSize="38sp" />
+
+        <ImageView
+            android:id="@+id/calamityquellerImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calamityquellerName"
+            android:src="@drawable/calamity" />
+
+        <ImageView
+            android:id="@+id/calamityquellerMonsterdrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calamityquellerName"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/calamityquellerImage"
+            android:adjustViewBounds="true"
+            android:maxWidth="128dp"
+            android:maxHeight="128dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mistgrasswick" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calamityquellerMonsterdrop"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/calamityquellerImage"
+            android:adjustViewBounds="true"
+            android:maxWidth="128dp"
+            android:maxHeight="128dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/nectar" />
+
+        //weapon mats
+
+        <LinearLayout
+            android:id="@+id/calamityquellerMats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calamityquellerImage"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="103dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/elixir" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="103dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/elixirr" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14"
+                    android:textColor="@color/white"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="103dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/elixirrr" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14"
+                    android:textColor="@color/white"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="103dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/elixirrrr" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:textColor="@color/white"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        //weapon stats words (1/90)
+
+        <LinearLayout
+            android:id="@+id/weaponstats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calamityquellerMats"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Base Atk\n(1/90)"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="38sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="69dp"
+                android:text="Sub Stat\nAtk (1/90)"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="38sp" />
+        </LinearLayout>
+        //weapon stats numbers
+
+        <LinearLayout
+            android:id="@+id/weaponstatsnums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weaponstats"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="49/741"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="88dp"
+                android:text="3.6/16.5%"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/calamityquellerPassive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/weaponstatsnums"
+            android:textStyle="bold"
+            android:textSize="34sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text="Weapon Passive (R1/R5):"/>
+        <TextView
+            android:id="@+id/calamityquellerDesc"
+            android:layout_below="@+id/calamityquellerPassive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Gain 12/15/18/21/24% All Elemental DMG Bonus. Obtain Consummation for 20s after using an Elemental Skill, causing ATK to increase by 3.2/4/4.8/5.6/6.4% per second. This ATK increase has a maximum of 6 stacks. When the character equipped with this weapon is not on the field, Consummation's ATK increase is doubled."
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+        //extra lower space
+        <TextView
+            android:layout_below="@id/calamityquellerDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ">
+        </TextView>
+
+
+    </RelativeLayout>
+
+</ScrollView>

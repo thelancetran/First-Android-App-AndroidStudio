@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:text="5 Star Weapons"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/swordText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="16dp"
+            android:text="Swords:"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        //Sword Buttons
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/skywardbladeButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/skywardblade" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Skyward\nBlade"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/aquilaButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/aquila" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Aquila\nFavonia"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/summitshaperButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/summitshaper" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Summit\nShaper"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/pjcButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/pjc" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Primordial\nJade Cutter"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/freedomswornButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/freedomsworn" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Freedom-\nSworn"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/mistsplitterButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/mistsplitter" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Mistsplitter\nReforged"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/claymoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Claymores:"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        //Claymore Buttons
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/skywardprideButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/skywardpride" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Skyward\nPride"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/wgsButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/wgs" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Wolf's\nGravestone"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/unforgedButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/unforged" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="The\nUnforged"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/sobpButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/sobp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Song of\nBroken Pines"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/redhornButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/redhorn" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Redhorn\nStonethresher"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/spearText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Spears:"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        //Spear Buttons
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/skywardspineButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/skywardspine" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Skyward\nSpine"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/pjwsButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/pjws" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Primordial Jade-\nWinged Spear"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/vortexvanquisherButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/vortexvanquisher" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Vortex\nVanquisher"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/homaButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/homa" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Staff of\nHoma"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/calamityButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/calamity" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Calamity\nQueller"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/engulfingButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/engulfing" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Engulfing\nLightning"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/catalystText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Catalysts:"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        //Catalyst Buttons
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/skywardatlusButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/skywardatlus" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Skyward\nAtlus"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/lostprayerButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/lostprayer" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Lost Prayer to\nthe Sacred Winds"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/memoryButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/memory" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Memory of Dust"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/moonglowButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/moonglow" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Everlasting\nMoonglow"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/kaguraverityButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/kaguraverity" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Kagura's\nVerity"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/bowText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Bows:"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        //Bow Buttons
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/skywardharpButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/skywardharp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Skyward\nHarp"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/amosbowButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/amosbow" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Amos\nBow"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/elegyButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/elegy" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Elegy for\nthe End"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/thunderingpulseButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/thunderingpulse" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Thundering\nPulse"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/polarstarButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/black"
+                        android:maxWidth="160dp"
+                        android:maxHeight="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/polarstar" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Polar\nStar"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        tools:context=".qiqi">
+
+        <TextView
+            android:id="@+id/qiqiName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Qiqi Bonaobra"
+            android:textSize="38sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        //Qiqi card
+        <ImageView
+            android:id="@+id/qiqiCard"
+            android:layout_width="255dp"
+            android:layout_height="450dp"
+            android:layout_below="@id/qiqiName"
+            android:src="@drawable/qiqicard" />
+
+        //talent books
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_below="@id/qiqiName"
+            android:columnCount="1"
+            android:rowCount="3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|right"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/talentprosp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="3/6/9"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/talentprospp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="21/42/63"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/talentprosppp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="38/76/114"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </GridLayout>
+
+        //boss material + local specialty
+        <GridLayout
+            android:id="@+id/qiqimats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/qiqiCard"
+            android:columnCount="3"
+            android:rowCount="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="135dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/tail" />
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="135dp"
+                    android:layout_marginLeft="35dp"
+                    android:src="@drawable/violetgrass" />
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="135dp"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/hoarfrostcore" />
+
+            </LinearLayout>
+
+
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/qiqiArtifact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/qiqimats"
+            android:layout_marginLeft="8dp"
+            android:text="Artifacts:"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        //first artifact rec
+        <LinearLayout
+            android:id="@+id/qiqiArtifact1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/qiqiArtifact"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="15dp"
+                android:text="4"
+                android:textColor="@color/white"
+                android:textSize="45sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/totm" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/qiqiArtifact1"
+            android:layout_below="@+id/qiqiArtifact"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="15dp"
+                android:text="or 4"
+                android:textColor="@color/white"
+                android:textSize="45sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/ocean" />
+        </LinearLayout>
+
+        //main stats artifacts
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/qiqiArtifact1"
+            android:columnCount="3"
+            android:rowCount="2" >
+
+            //sands
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_marginLeft="6dp">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/sands" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ER/Atk %"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="8dp"/>
+            </LinearLayout>
+            //goblet
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/goblet" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Atk %"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="16dp"/>
+            </LinearLayout>
+            //circlet
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_marginLeft="14dp">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/circlet"
+                    android:layout_marginLeft="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Healing/Atk %"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            //extra lower space
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" ">
+            </TextView>
+
+        </GridLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
